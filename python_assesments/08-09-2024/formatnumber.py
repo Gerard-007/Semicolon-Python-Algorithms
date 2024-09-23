@@ -8,5 +8,6 @@ def format_number(number, width) -> str:
 	converted_number += num_str
 
 	return str(converted_number)
-	
-	
+
+
+format_number(20, 5)
