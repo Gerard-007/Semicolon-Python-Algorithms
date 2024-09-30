@@ -26,6 +26,3 @@ class TestMultiplication(unittest.TestCase):
         a = -10
         b = -2
         self.assertEqual(multiply_numbers(a, b), 20)
-
-    # def test_that_multiplication_function_checks_for_zero_value(self):
-    #     self.assertRaises(ValueError, converter, -1)
