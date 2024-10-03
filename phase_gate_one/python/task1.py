@@ -12,4 +12,4 @@ def sum_of_numbers(number_input):
 
 
 user_input = int(input(f"What is the sum of {random_number_1} and {random_number_2}: "))
-print(sum_of_numbers(number))
+print(sum_of_numbers(user_input))
