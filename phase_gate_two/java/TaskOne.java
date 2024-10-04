@@ -14,6 +14,7 @@ public class TaskOne {
         for (int i = 0; i < charArray.length; i++) {
             if(charArray[i] % 2 != 0) {
                 result = false;
+                break;
             }
         }
         System.out.print(result == true ? "True" : "False");
