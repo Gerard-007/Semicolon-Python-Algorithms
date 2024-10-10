@@ -9,7 +9,6 @@ public class TaskThree {
 
         Scanner input = new Scanner(System.in);
         generateCustomUserArray(input);
-        
     }
 
 
