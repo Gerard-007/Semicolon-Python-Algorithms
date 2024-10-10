@@ -14,4 +14,4 @@ def left_right_triangle(number):
             print(k if k % 2 != 0 else "*", end="")
         print()
 
-left_right_triangle(5)
+left_right_triangle(10)
