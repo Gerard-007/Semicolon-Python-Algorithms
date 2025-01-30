@@ -1,0 +1,20 @@
+Online Book Store
+- Allow Users to Browse Books and add to their shopping cart
+- Allows users to place an order
+
+Classes
+- Customer
+- Book
+- Shopping cart
+- Order
+- Payment
+
+Use Cases
+- Browse Books
+- Search for books
+- Add books to cart
+- Remove books from cart
+- View shopping cart
+- Place an order
+- Make a Payment
+- View order history
