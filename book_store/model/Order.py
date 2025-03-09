@@ -1,6 +1,7 @@
 from datetime import datetime
 from enum import Enum
 
+
 class OrderStatus(Enum):
     PENDING = "PENDING"
     CONFIRMED = "CONFIRMED"
@@ -8,9 +9,10 @@ class OrderStatus(Enum):
     DELIVERED = "DELIVERED"
     CANCELLED = "CANCELLED"
 
+
 class Order:
     orders = []
-    
+
     def __init__(self, user, shopping_cart):
         self.__order_id = len(Order.orders) + 1
         self.__user = user

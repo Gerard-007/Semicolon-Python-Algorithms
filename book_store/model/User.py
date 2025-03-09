@@ -44,9 +44,11 @@ class User:
         return self.__username
 
     def generate_username(self):
-        username = self.__email.split('@')[0]
+        username = self.__email.split("@")[0]
         temp_username = username
-        username_exists = any(user.get_username() == temp_username for user in self.users)
+        username_exists = any(
+            user.get_username() == temp_username for user in self.users
+        )
         if username_exists:
             temp_username = f"{username}{random.randint(1000, 9999)}"
         self.__username = temp_username

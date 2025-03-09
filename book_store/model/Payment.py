@@ -1,11 +1,13 @@
 from datetime import datetime
 from enum import Enum
 
+
 class PaymentMethod(Enum):
     CREDIT_CARD = "CREDIT_CARD"
     DEBIT_CARD = "DEBIT_CARD"
     BANK_TRANSFER = "BANK_TRANSFER"
     CASH = "CASH"
+
 
 class PaymentStatus(Enum):
     PENDING = "PENDING"
@@ -13,9 +15,10 @@ class PaymentStatus(Enum):
     FAILED = "FAILED"
     REFUNDED = "REFUNDED"
 
+
 class Payment:
     payments = []
-    
+
     def __init__(self, order, payment_method):
         self.__payment_id = len(Payment.payments) + 1
         self.__order = order
@@ -31,7 +34,7 @@ class Payment:
             self.__status = PaymentStatus.COMPLETED
             self.__updated_at = datetime.now()
             return True
-        except Exception as e:
+        except Exception:
             self.__status = PaymentStatus.FAILED
             self.__updated_at = datetime.now()
             return False

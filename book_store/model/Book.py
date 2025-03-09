@@ -31,24 +31,20 @@ class Book:
         if not self.__isbn.isdigit():
             raise ValueError("ISBN must be an integer")
         self.__isbn = isbn
-        
+
     @property
     def price(self):
         return self.__price
-    
+
     @property
     def quantity(self):
         return self.__quantity
 
-    @property
+    @quantity.setter
     def quantity(self, value):
         if value < 0:
             raise ValueError("Quantity cannot be negative")
         self.__quantity = value
 
     def __str__(self):
-        return f"""
-            {self.title} by {self.author} - ${self.price:.2f} 
-            (ISBN: {self.isbn}, 
-            Stock: {self.quantity})
-        """
+        return f"{self.__title} by {self.__author} - ${self.__price:.2f} (ISBN: {self.__isbn}, Stock: {self.__quantity})"
